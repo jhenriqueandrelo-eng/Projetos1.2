@@ -30,3 +30,114 @@
     --st-transition: 240ms ease;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+    background: var(--st-black);
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    color: var(--st-white);
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(104, 0, 10, .19), transparent 42rem),
+        linear-gradient(180deg, #080808 0%, #101010 48%, #050505 100%);
+    font-family: var(--st-font-body);
+    font-size: 16px;
+    line-height: 1.75;
+    overflow-x: hidden;
+}
+
+body::before {
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+    opacity: .12;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+}
+
+::selection {
+    color: #fff;
+    background: var(--st-red);
+}
+
+::webkit-scrollbar {
+    width: 11px;
+}
+
+::webkit-scrollbar-track {
+    background: #080808;
+}
+
+::webkit-scrollbar-thumb {
+    border: 2px solid #080808;
+    border-radius: 20px;
+    background: linear-gradient(var(--st-red-bright), var(--st-red-deep));
+}
+
+::webkit-scrollbar-thumb:hover {
+    background: #ff4b55;
+}
+
+a {
+    color: #ff737a;
+    text-decoration: none;
+    transition: color var(--st-transition), text-shadow var(--st-transition);
+}
+
+a: hover {
+    color: #fff;
+    text-shadow: 0 0 12px var(--st-red-glow);
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    cursor:pointer;
+}
+
+img,
+picture,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+header {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    min-height: 680px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 70px 6vw 55px;
+    border-bottom: 1px solid rgba(229, 9, 20, .75);
+    text-align: center;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, .48), rgba(0, 0, 0, .82) 70%, #080808),
+        linear-gradient(90deg, rgba(0, 0, 0, .35), transparent, rgba(0, 0, 0, .35)),
+        url("imagens/banner-principal.jpg") center 38% / cover no-repeat,
+        #080808;
+}
