@@ -1,0 +1,32 @@
+/* STRANGER THINGS — DESIGN SYSTEM COMPLETO */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap')
+
+:root {
+    color-scheme: dark;
+    --st-red: #e50914;
+    --st-red-bright: #ff2633;
+    --st-red-deep: #72000a;
+    --st-red-glow: rgba(229, 9, 20, .45);
+    --st-black: #050505;
+    --st-night: #090909;
+    --st-surface: #111111;
+    --st-surface-raised: #191919;
+    --st-surface-soft: #202020;
+    --st-border: rgba(255, 255, 255, .10);
+    --st-border-red: rgba(229, 9, 20, .42);
+    --st-white: #f7f4f2;
+    --st-muted: #b8b1b1;
+    --st-dim: #777171;
+    --st-gold: #c7a66a;
+    --st-font-display: 'Cinzel', Georgia, serif;
+    --st-font-body: 'Inter', Arial, sans-serif;
+    --st-radius-sm: 6px;
+    --st-radius-md: 12px;
+    --st-radius-lg: 20px;
+    --st-shadow: 0 18px 50px rgba(0, 0, 0, .48);
+    --st-shadow-red: 0 0 28px rgba(229, 9, 20, .22);
+    --st-content: 1240px;
+    --st-transition: 240ms ease;
+}
+
