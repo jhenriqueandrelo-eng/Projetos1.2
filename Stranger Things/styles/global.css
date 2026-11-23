@@ -212,3 +212,96 @@ nav li {
     padding: 0;
 }
 
+nav a {
+    display: inline-flex;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 3px;
+    color: #f5eeee;
+    background: rgba(0, 0, 0, .48);
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    transition: transform var(--st-transition), background var(--st-transition), border-color var(--st-transition), box-shadow var(--st-transition);
+}
+
+nav a:hover,
+nav a:focus-visible {
+    transform: translateY(-3px);
+    border-color: var(--st-red-bright);
+    color: #fff;
+    background: var(--st-red);
+    box-shadow: 0 0 20px var(--st-red-glow);
+    text-shadow: none;
+}
+
+main {
+    width; min(100% - 40px, var(--st-content));
+    margin-inline: auto;
+    padding: 34px 0 80px;
+}
+
+section {
+    position: relative;
+    margin: 30px 0;
+    padding: clamp(28px, 5vw, 62px);
+    overflow: hidden;
+    border: 1px solid var(--st-border);
+    border-top: 2px solid var(--st-border-red);
+    border-radius: var(--st-radius-md);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.025), transparent 38%),
+        linear-gradient(145deg, #171313, #0c0c0c 72%);
+    box-shadow: var(--st-shadow);
+    scroll-margin-top: 24px;
+}
+
+section::before {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    content: "";
+    pointer-events: none;
+    background: radial-gradient(circle at top right, rgba(229, 9, 20, .13), transparent 70%);
+}
+
+section h2 {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 0 0 17px;
+    border-bottom: 1px solid rgba(229, 9, 20, .65);
+    color: #fff;
+    font-family: var(--st-font-display);
+    font-size: clamp(1.65rem, 4vw, 2.7rem);
+    font-weight: 700;
+    letter-spacing: .055em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-shadow: 0 0 18px rgba(229, 9, 20, .22);
+}
+
+section h2::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 95px;
+    height: 3px;
+    content: "";
+    background: var(--st-red);
+    box-shadow: 0 0 12px var(--st-red);
+}
+
+section h3 {
+    margin: 22px 0 12px;
+    color: #ff666d;
+    font-family: var(--st-font-display);
+    font-size: 1.22rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
