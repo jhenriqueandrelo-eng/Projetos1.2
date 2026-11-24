@@ -305,3 +305,112 @@ section h3 {
     font-weight: 700;
     line-height: 1.35;
 }
+
+section p {
+    max-width: 900px;
+    margin: 0 0 18px;
+    color: #c9c2c2;
+    font-size: .98rem;
+    line-height: 1.85;
+    text-align: left;
+}
+
+section strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+section ul,
+section ol {
+    margin: 18px 0 24px;
+    padding-left: 28px;
+}
+
+section li {
+    padding: 5px 0 5px 4px;
+    color: #c9c2c2;
+}
+
+section li::marker {
+    color: var(--st-red-bright);
+}
+
+section li::selection {
+    background: var(--st-red);
+}
+
+section hr,
+hr {
+    height: 1px;
+    margin: 35px 0;
+    border: 0;
+    background: linear-gradient(90deg, transparent, rgba(229, 9, 20, .8), transparent);
+}
+
+article {
+    display: inline-flex;
+    width: calc(33.333% - 22px);
+    min-height: 390px;
+    flex-direction: column;
+    vertical-align: top;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, .09);
+    border-radius: var(--st-radius-md);
+    background: linear-gradient(155deg, #202020, #111);
+    text-align: center;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .28);
+    transition: transform var(--st-transition), border-color var(--st-transition), box-shadow var(--st-transition);
+}
+
+article:hover {
+    transform: translateY(-7px);
+    border-color: rgba(229, 9, 20, .72);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .42), 0 0 20px rgba(229, 9, 20, .12);
+}
+
+article h3 {
+    margin-top: 8px;
+    color: #fff;
+}
+
+article p {
+    margin: 10px 0 0;
+    color: #bdb5b5;
+    font-size: .9rem;
+    text-align: center;
+}
+
+section img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 520px;
+    margin: 22px auto;
+    border: 1px solid rgba(229, 9, 20, .35);
+    border-radius: var(--st-radius-sm);
+    object-fit: cover;
+    boz-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+    transition: transform 350ms ease, filter 350ms ease, box-shadow 350ms ease;
+}
+
+section img:hover {
+    transform: scale(1.025);
+    filter: saturate(1.12) contrast(1.04);
+    box-shadow: 0 0 25px rgba(229, 9, 20, .25);
+}
+
+article img {
+    width: 100%;
+    height: 245px;
+    margin: 12px auto;
+    object-fit: cover;
+}
+
+figure {
+    display: inline-block;
+    width: calc(33.333% - 22px);
+    margin: 10px;
+    vertical-align: top;
+    text-align: center;
+}
