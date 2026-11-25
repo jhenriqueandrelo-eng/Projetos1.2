@@ -550,3 +550,73 @@ details {
     background: #151515;
     transition: border-color var(--st-transition), background var(--st-transition);
 }
+
+details[open] {
+    border-color: var(--st-red);
+    background: #1a1010;
+}
+
+summary {
+    color: #f4eeee;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+details p {
+    margin: 14px 0 0;
+}
+
+footer {
+    position: relative;
+    padding: 65px 24px 35px;
+    overflow: hidden;
+    border-top: 2px solid var(--st-red);
+    background: radial-gradient(ellipse at 50% 0, tgba(140, 0, 10, .22), transparent 55%), #050505;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 0 0 15px;
+    color: #fff;
+    font-family: var(--st-font-display);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    letter-spacing: .13em;
+    text-shadow: 0 0 15px var(--st-red);
+}
+
+footer p {
+    margin: 8px 0;
+    color: #928b8b;
+    font-size: .88rem;
+}
+
+footer a {
+    color: #ff626a;
+}
+
+:focus-visible {
+    outline: 2px solid #ff626a;
+    outline-offset: 4px;
+}
+
+@keyframes title-flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1;}
+    20%, 24%, 55% {opacity: .86; }
+}
+
+@keyframes pulse-red {
+    0%, 100% { box-shadow: 0 0  8px rgba(229, 9, 20, .15); }
+    50% { box-shadow: 0 0 24px rgba(229, 9, 20, .38);}
+}
+
+@keyframes fade-up {
+    from { opacity: 0; transformm: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1000px) {
+    header { min-height: 580px; }
+    article { width: calc(50% - 22px); }
+    figure { width: calc(50% - 22px); }
+    main { width: min(100% - 28px, var(--st-content)); }
+}
