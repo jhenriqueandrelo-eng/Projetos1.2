@@ -452,3 +452,101 @@ fieldset {
     border-radius: var(--st-radius-md);
     background: rgba(0, 0, 0, .24);
 }
+
+legend {
+    padding: 0 10px;
+    color: #ff747b;
+    font-weight: 700;
+}
+
+label {
+    display: inline-block;
+    margin: 8px 0;
+    color: #eee;
+    font-size: .94rem;
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    min-height: 46px;
+    margin: 7px 0 15px;
+    padding: 12px 14px;
+    border: 1px solid #414141;
+    border-radius: var(--st-radius-sm);
+    outline: none;
+    color: #fff;
+    background: #090909;
+    transition: border-color var(--st-transition), box-shadow var(--st-transition), background var(--st-transition);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--st-red-bright);
+    background: #100909;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, .13);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    min-height: auto;
+    margin: 0 9px 0 0;
+    accent-color: var(--st-red);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 8px 8px 0;
+    padding: 12px 24px;
+    border: 1px solid var(--st-red);
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(135deg, #e50914, #9b0009);
+    font-size: .83rem;
+    font-weight: 800;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    transition: transform var(--st-transition), box-shadow var(--st-transition), background var(--st-transition);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #ff2633, #bd000b);
+    box-shadow: 0 8px 22px rgba(229, 9, 20, .28);
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+    transform: translateY(0);
+}
+
+details {
+    margin: 12px 0;
+    padding: 17px 20px;
+    border: 1px solid rgba(255, 255, 255, .10);
+    border-radius: var(--st-radius-sm);
+    background: #151515;
+    transition: border-color var(--st-transition), background var(--st-transition);
+}
