@@ -661,3 +661,75 @@ section#inicio > h2 {
 section#inicio article {
     animation: pulse-red 6s ease-in-out infinite;
 }
+
+section#sobre {
+    animation: fade-up .65s ease both;
+    animation-delay: .04s;
+}
+section#sobre > h2 {
+    position: relative;
+    z-index: 1;
+}
+section#sobre article {
+    animation: pulse-red 6s ease-in-out infinite;
+}
+
+section#elenco {
+    animation: fade-up .65s ease both;
+    animation-delay: .04s;
+}
+section#elenco > h2 {
+    position: relative;
+    z-index: 1;
+}
+section#elenco article {
+    animation: pulse-red 6s ease-in-out infinite;
+}
+
+section#personagens {
+    animation: fade-up .65s ease both;
+    animation-delay: .04s;
+}
+section#personagens > h2 {
+    position: relative;
+    z-index: 1;
+}
+section#personagens article {
+    animation: pulse-red 6s ease-in-out infinite;
+}
+
+section#relacionamentos {
+    animation: fade-up .65s ease both;
+    animation-delay: .04s;
+}
+section#relacionamnetos > h2 {
+    position: relative;
+    z-index: 1;
+}
+section#relacionamentos article {
+    animation: pulse-red 6s ease-in-out infinite;
+}
+
+section#temporadas {
+    animation: fade-up .65s ease both;
+    animation-delay: .04s;
+}
+section#temporadas > h2 {
+    position: relative;
+    z-index: 1;
+}
+section#temporadas article {
+    animation: pulse-red 6s ease-in-out infinite;
+}
+
+section#episodios {
+    animation: fade-up .65s ease both;
+    animation-delay: .04s;
+}
+section#episodios > h2 {
+    position: relative;
+    z-index: 1;
+}
+section#episodios article {
+    animation: pulse-red 6s ease-in-out infinite;
+}
